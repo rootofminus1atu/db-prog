@@ -26,7 +26,7 @@ BEGIN
 	SET @ITotalPrice = Price * @EAmount;
 	
 	-- compare them
-	SET @IMessage = IIF(@ITotalPrice > @ICreditLimit, 'You don\'t have enough credits', 'You have enough credits');
+	SET @IMessage = IIF(@ITotalPrice > @ICreditLimit, 'You dont have enough credits', 'You have enough credits');
 	
 	-- return true/false as a message
 	SELECT @IMessage;
